@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create new student</title>
+</head>
+<body>
+
+<form th:action="@{/}" th:object="${student}" method="POST">
+    <input type="text" th:field="*{name}" placeholder="Student name">
+    <input type="text" th:field="*{secondName}" placeholder="Student second name">
+    <input type="number" th:field="*{score}" placeholder="Student score">
+    <button type="submit">Add new student</button>
+</form>
+
+</body>
+</html>
